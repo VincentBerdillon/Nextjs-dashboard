@@ -4,7 +4,13 @@ import { Suspense } from 'react';
 import CardWrapper from '../../ui/dashboard/cards';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
 import RevenueChart from '../../ui/dashboard/revenue-chart';
+import { Metadata } from 'next';
  
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
+
+
 export default async function Page() {
 
   return (
